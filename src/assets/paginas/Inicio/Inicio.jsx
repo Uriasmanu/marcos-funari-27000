@@ -2,6 +2,8 @@ import React, { useRef } from 'react';
 import './_inicio.scss'
 import './_inicioMobile.scss'
 
+import poster from '../../imagens/poster.png'
+
 const Inicio = () => {
     // Referência para o rodapé
     const footerRef = useRef(null);
@@ -34,10 +36,13 @@ const Inicio = () => {
                 </ul>
             </header>
             <main>
-                {/* Conteúdo principal */}
+                <div className='primeira-chamada'>
+                    <h1>Por uma cidade com valores sólidos e uma gestão transparente</h1>
+                    <img src={poster} alt="poster" />
+                </div>
             </main>
             <footer ref={footerRef}>
-                {/* Rodapé */}
+
             </footer>
         </div>
     );

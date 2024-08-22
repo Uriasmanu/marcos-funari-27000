@@ -1,6 +1,6 @@
 .container-inicio {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
@@ -10,24 +10,49 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        margin-bottom: 2%;
 
         ul {
             display: flex;
             width: 45%;
-            height: 20px;
+            height: auto;
             justify-content: space-around;
-            font-size: 1.1rem;
+            font-size: 1.5rem;
             font-weight: bold;
             color: #F3C925;
 
             li {
                 display: flex;
-                
-                &:hover{
+
+                &:hover {
                     cursor: pointer;
                     color: #42B676;
                     border-bottom: 2px solid #42B676;
                 }
+            }
+        }
+    }
+
+    main {
+        width: 100%;
+        border-top: 4px solid #F3C925;
+        border-bottom: 4px solid #F3C925;
+        padding: 2% 0%;
+
+        .primeira-chamada {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            h1 {
+                width: 30%;
+                color: #F3C925;
+                font-size: 3.5rem;
+            }
+
+            img {
+                width: 30%;
+                height: auto;
             }
         }
     }
