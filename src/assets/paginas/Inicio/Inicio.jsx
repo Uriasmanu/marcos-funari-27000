@@ -1,4 +1,6 @@
 import React, { useRef } from 'react';
+import './_inicio.scss'
+import './_inicioMobile.scss'
 
 const Inicio = () => {
     // Referência para o rodapé
