@@ -25,7 +25,7 @@ const Inicio = () => {
 
     const handleSugestaoClick = () => {
         const telefone = '14998078221';
-        const mensagem = 'Boa tarde, gostaria de enviar uma sugestao para a sua campanha';
+        const mensagem = 'Olá, gostaria de enviar uma sugestao para a sua campanha';
         const url = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
         window.open(url, '_blank');
     };
